@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List</title>
+    <!--header-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pangolin&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
     <!--task list font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
     <!--task list cdn-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--task list-->
     <link rel="stylesheet" href="taskList-style.css">
     <!--footer-->
@@ -14,27 +29,57 @@
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="footer-new-style.css">
 </head>
+
 <body>
 
-    <!--task list body-->
-    <form action="">
-        <label><h2>Task List</h2></label>
-        <input type="text" class="todo-input">
-        <button class="todo-btn" type="submit">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-        <div class="select">
-            <select name="todo" class="filter-todo">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="ongoing">Ongoing</option>
-            </select>
+    <!--Header section-->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">eventra logo</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="event.html">Event Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <a href="log_in.html" class="action_btn">LOG IN</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-    </form>
-    <div class="todo-container">
-        <ul class="todo-list"></ul>
-    </div>
 
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="event.html">Event Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="log_in.html" class="action_btn">LOG IN</a></li>
+        </div>
+    </header>
+
+
+    <!--task list body-->
+    <div class="background">
+        <h1>Task List</h1>
+        <form action="">
+            <input type="text" class="todo-input" placeholder="Add your task">
+            <button class="todo-btn" type="submit">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </button>
+            <div class="select-status">
+                <select name="todo" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="ongoing">Ongoing</option>
+                </select>
+            </div>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+    </div>
 
     <!--footer-->
     <footer class="footer-distributed">
@@ -88,8 +133,23 @@
         </div>
     </footer>
 
+    <!--header script-->
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
 
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
     <!--task list script-->
     <script src="script.js"></script>
 </body>
+
 </html>
