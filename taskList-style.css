@@ -112,13 +112,13 @@ form button:hover{
     opacity: 0;
 }
 
-select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
+ /* select{
+     -webkit-appearance: none;
+    -moz-appearance: none; 
     appearance: none;
     outline: none;
     border: none;
-}
+} */
 
 /* .select-status{
     color: #ff007a;
@@ -128,7 +128,7 @@ select{
     padding: 1rem;
 }   */
 
-.select-status .filter-todo{
+/* .select-status .filter-todo{
     color: #ff007a;
     width: 10rem;
     height: 3.2rem;
@@ -138,7 +138,7 @@ select{
 
 .select-status::after{
     content: "\25BC";
-    /* position: absolute; */
+    position: absolute; 
     background: #ff007a;
     top: 0;
     right: 0;
@@ -150,4 +150,57 @@ select{
 .select-status::hover::after{
     background: white;
     color: #ff007a;
-}
+} */
+
+select {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    height: 3.2rem;
+    color: #ff007a;
+    width: 12rem;
+  }
+  
+  .select-status {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    margin: 1rem;
+    overflow: hidden;
+  }
+  
+  .select-status::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /*transform: translateY(-50%);*/
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 8px solid #000;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .select-status:hover::after {
+    /*transform: translateY(-50%) rotate(180deg);*/
+    background: #fff;
+    color: #ff007a;
+  }
+
+  .select-status .filter-todo{
+    width: 150px;
+    border-radius: 50px;
+  }
+  
+  
