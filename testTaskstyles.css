@@ -23,6 +23,7 @@ h1 {
     color: azure;
 }
  
+h1,
 form {
     min-height: 20vh;
     display: flex;
@@ -162,3 +163,8 @@ select {
     background: white;
     color: #ff007a;
 }
+
+/*Responsive*/
+
+
+  
