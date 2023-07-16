@@ -67,6 +67,8 @@ body{
 .details-sub>h5{
     font-weight: 600;
     font-size: 18px;
+    font-family: 'Lumanosimo', cursive;
+    color: rgb(37, 150, 190);
 }
 
 .details>p{
