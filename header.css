@@ -193,8 +193,8 @@ header{
 
     .dropdown_menu{
         display: block;
+        
     }
-
 }
 
 @media(max-width: 576px){
