@@ -13,6 +13,7 @@
   
   li{
     list-style: none;
+    font-family: 'Lumanosimo', cursive;
   }
   
   a{
@@ -222,10 +223,10 @@
     .formb {
       font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      display: grid;
+      display: flex;
       place-items: center;
       min-height: 100vh;
-      background-image: url("https://images.pexels.com/photos/2395249/pexels-photo-2395249.jpeg?auto=compress&cs=tinysrgb&w=600");
+      background-image: url("https://images.pexels.com/photos/1157557/pexels-photo-1157557.jpeg?auto=compress&cs=tinysrgb&w=600");
       z-index: 0;
     }
     /* Global Stylings */

@@ -12,6 +12,7 @@ body{
 
 li{
     list-style: none;
+    font-family: 'Lumanosimo', cursive;
 }
 
 a{
@@ -29,6 +30,7 @@ a:hover{
 header{
     position: relative;
     padding: 0 2rem;
+
 }
 
 .navbar{
