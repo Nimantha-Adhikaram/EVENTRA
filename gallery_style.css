@@ -211,8 +211,10 @@ body {
 
 .gallery {
 	padding: 80px 0px;
-	background: rgb(66,60,192);
-	background: linear-gradient(90deg, rgba(66,60,192,1) 6%, rgba(45,136,219,1) 22%, rgba(255,255,255,1) 95%);
+	background: url("https://img.freepik.com/free-photo/event-manager-using-laptop-banquet-hall_23-2148085313.jpg?size=626&ext=jpghttps://img.freepik.com/free-photo/event-manager-using-laptop-banquet-hall_23-2148085313.jpg?size=626&ext=jpg");
+	background-repeat: no-repeat;
+	display: flex;
+	background-size: cover;
 }
 
 img {
