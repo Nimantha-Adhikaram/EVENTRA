@@ -5,9 +5,9 @@
     --sm-font: 'Poppins', sans-serif;
     --pink: #e5345b;
 }
-body{
+/* body{
     font-family: var(--sm-font);
-}
+} */
 
 /* button */
 .bg-primary{
@@ -33,7 +33,10 @@ body{
 }
 
 /* navbar */
-.navbar{
+.navbar {
+    list-style: none;
+}
+/* .navbar{
     -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
@@ -49,11 +52,11 @@ body{
 }
 .nav-item{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
-}
+} */
 
 /* header */
 #header{
-    background: url("https://images.pexels.com/photos/2892199/pexels-photo-2892199.jpeg?auto=compress&cs=tinysrgb&w=600") top/cover no-repeat;
+    background: url("https://img.freepik.com/free-photo/beautiful-decorated-table-with-flowers-celebration_8353-9284.jpg?size=626&ext=jpg") top/cover no-repeat;
 }
 .carousel-inner h1{
     font-size: 60px;
@@ -118,7 +121,7 @@ body{
 
 /* offers */
 #offers{
-    background: url("https://images.pexels.com/photos/1580622/pexels-photo-1580622.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") center/cover no-repeat;
+    background: url("https://img.freepik.com/free-photo/beautiful-christmas-interior-decoration_181624-32496.jpg?size=626&ext=jpg") center/cover no-repeat;
 }
 #offers .row{
     min-height: 60vh;
