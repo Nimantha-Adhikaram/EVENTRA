@@ -33,11 +33,15 @@
 }
 
 /* navbar */
-.navbar {
-    list-style: none;
+.navbar a {
+    text-decoration: none !important;
 }
 
-
+.navbar .links a {
+    font-family: 'Lumanosimo', cursive!important;
+    font-family: 'Pangolin', cursive!important;
+    font-family: 'Roboto', sans-serif!important;
+}
 
 /* header */
 #header{
